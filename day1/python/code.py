@@ -1,5 +1,5 @@
 # read input from text file
-with open("input.txt") as f:
+with open("../input.txt") as f:
     all_energy = f.read().splitlines()
 
 
@@ -15,4 +15,8 @@ for energy in all_energy:
             elf_energy[i] += int(energy)
 
 # print max value
-print(max(elf_energy.values()))
+print(max(elf_energy.values())) # Part 1
+
+#top 3
+top3 = sorted(elf_energy.values(), reverse=True)[:3]
+print(sum(top3)) # Part 2
