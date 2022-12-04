@@ -16,7 +16,7 @@ for item in scores:
     if item in win_combinations:
         win_score = 6
     elif item in draw_combinations:
-        win_score = 3
+        win_score = 3   
     else:
         win_score = 0
 
